@@ -1,0 +1,9 @@
+*
+# The gitignore of this repository itself (!)
+!.gitignore
+
+# neovim
+!nvim/
+
+#kitty
+!kitty/
