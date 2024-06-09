@@ -34,6 +34,7 @@ vim.opt.foldenable = true
 -- vim.opt.foldmethod = 'indent'     -- Fold method indent
 vim.opt.foldlevel = 0
 vim.opt.clipboard = "unnamedplus" -- Make clipboard work
+vim.wo.signcolumn = "yes"         -- Left space doesnt move with the icons
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
