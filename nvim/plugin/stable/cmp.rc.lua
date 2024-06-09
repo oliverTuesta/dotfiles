@@ -41,7 +41,7 @@ cmp.setup({
     { name = 'buffer' }
   }),
   formatting = {
-    format = lspkind.cmp_format({ 
+    format = lspkind.cmp_format({
       maxwidth = 50,
       before = function(entry, vim_item)
         vim_item = formatForTailwindCSS(entry, vim_item)
@@ -52,6 +52,6 @@ cmp.setup({
 })
 
 vim.cmd [[
-  set completeopt=menuone,noinsert,noselect
-  highlight! default link CmpItemKind CmpItemMenuDefault
-  ]]
+set completeopt=menuone,noinsert,noselect
+highlight! default link CmpItemKind CmpItemMenuDefault
+]]
