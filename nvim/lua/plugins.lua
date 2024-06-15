@@ -26,15 +26,12 @@ packer.startup(function(use)
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use 'norcalli/nvim-colorizer.lua'
-  use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
-  })
+
   use { 'numToStr/Comment.nvim',
     requires = {
       'JoosepAlviste/nvim-ts-context-commentstring'
-    }
-  }
+    } }
+
   use 'neovim/nvim-lspconfig'  -- LSP
   use 'nvimtools/none-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'williamboman/mason.nvim'

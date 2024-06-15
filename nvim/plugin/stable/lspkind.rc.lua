@@ -17,7 +17,7 @@ lspkind.init({
   -- 'codicons' for codicon preset (requires vscode-codicons font)
   --
   -- default: 'default'
-  preset = 'codicons',
+  ppreset = 'codicons',
 
   -- override preset symbols
   -- default: {}
@@ -48,4 +48,4 @@ lspkind.init({
     Operator = "",
     TypeParameter = ""
   },
-}) 
+})

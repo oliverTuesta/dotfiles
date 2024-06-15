@@ -42,3 +42,6 @@ vim.keymap.set('i', 'jk', '<Esc>')
 
 -- Reset search
 vim.keymap.set('n', '<Space>h', ':noh<Return>')
+
+-- Markdown preview
+vim.keymap.set('n', '<C-p>', ':MarkdownPreviewToggle<Return>')
