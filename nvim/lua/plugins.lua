@@ -15,8 +15,15 @@ packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim'   -- Statusline (lower)
   use 'akinsho/nvim-bufferline.lua' -- Bufferline (upper)
   use 'onsails/lspkind-nvim'        -- vscode-like pictogram
-  use 'hrsh7th/cmp-nvim-lsp'        -- nvim-cmp source for neovim's built-in LSP
-  use 'hrsh7th/nvim-cmp'            -- Completion
+  use 'neovim/nvim-lspconfig'
+
+  -- nvim-cmp
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.2',
     requires = { { 'nvim-lua/plenary.nvim' } }
