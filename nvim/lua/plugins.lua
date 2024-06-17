@@ -15,7 +15,6 @@ packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim'   -- Statusline (lower)
   use 'akinsho/nvim-bufferline.lua' -- Bufferline (upper)
   use 'onsails/lspkind-nvim'        -- vscode-like pictogram
-  use 'neovim/nvim-lspconfig'
 
   -- nvim-cmp
   use 'hrsh7th/cmp-nvim-lsp'
@@ -55,4 +54,12 @@ packer.startup(function(use)
       ts_update()
     end,
   }
+
+  use({
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    -- install jsregexp (optional!:).
+    run = "make install_jsregexp"
+  })
 end)
