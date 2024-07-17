@@ -30,7 +30,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'windwp/nvim-autopairs'
-  use 'windwp/nvim-ts-autotag'
+  -- use 'windwp/nvim-ts-autotag'
   use 'norcalli/nvim-colorizer.lua'
 
   use { 'numToStr/Comment.nvim',
@@ -42,7 +42,7 @@ packer.startup(function(use)
   use 'nvimtools/none-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-  use 'glepnir/lspsaga.nvim' -- LSP UIs
+  -- use 'glepnir/lspsaga.nvim' -- LSP UIs
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
@@ -61,5 +61,16 @@ packer.startup(function(use)
     tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
     -- install jsregexp (optional!:).
     run = "make install_jsregexp"
+  })
+
+  -- surround
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end
   })
 end)
