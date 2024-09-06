@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/spigi/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/spigi/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   ["colorbuddy.nvim"] = {
     loaded = true,
     path = "/home/spigi/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
