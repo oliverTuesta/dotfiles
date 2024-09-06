@@ -21,7 +21,8 @@ require 'nvim-treesitter.configs'.setup {
     "terraform",
     "cpp",
     "scss",
-    "hcl"
+    "hcl",
+    "astro"
   },
 
 
