@@ -41,4 +41,4 @@ vim.keymap.set('n', 'O', 'm`O<Esc>``')
 vim.keymap.set('n', '<Space>h', ':noh<Return>')
 
 -- Markdown preview
-vm.keymap.set('n', '<C-p>', ':MarkdownPreviewToggle<Return>')
+vim.keymap.set('n', '<C-p>', ':MarkdownPreviewToggle<Return>')
