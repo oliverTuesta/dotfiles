@@ -37,11 +37,8 @@ keymap.set('', 'sl', '<C-w>l')
 vim.keymap.set('n', 'o', 'm`o<Esc>``')
 vim.keymap.set('n', 'O', 'm`O<Esc>``')
 
--- Normal mode with jk
-vim.keymap.set('i', 'jk', '<Esc>')
-
 -- Reset search
 vim.keymap.set('n', '<Space>h', ':noh<Return>')
 
 -- Markdown preview
-vim.keymap.set('n', '<C-p>', ':MarkdownPreviewToggle<Return>')
+vm.keymap.set('n', '<C-p>', ':MarkdownPreviewToggle<Return>')
