@@ -39,7 +39,6 @@ packer.startup(function(use)
       'JoosepAlviste/nvim-ts-context-commentstring'
     } }
 
-  use 'neovim/nvim-lspconfig'  -- LSP
   use 'nvimtools/none-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
@@ -70,5 +69,11 @@ packer.startup(function(use)
         -- Configuration here, or leave empty to use defaults
       })
     end
+  })
+
+  -- markdown preview
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
   })
 end)

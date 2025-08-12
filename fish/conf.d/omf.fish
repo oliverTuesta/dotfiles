@@ -8,3 +8,9 @@ source $OMF_PATH/init.fish
 
 alias tx="tmux"
 alias vi="nvim"
+
+# go
+if test -d "$HOME/go/bin"
+  set -gx PATH $HOME/go/bin $PATH
+end
+
