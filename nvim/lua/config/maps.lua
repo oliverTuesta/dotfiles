@@ -4,7 +4,7 @@ local keymap = vim.keymap
 vim.g.mapleader = " "
 
 -- Ex mode
-vim.keymap.set("n", "<leader>iv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>t", vim.cmd.Ex)
 
 -- Do not yank with x
 keymap.set('n', 'x', '"_x')
