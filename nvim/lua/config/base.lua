@@ -42,3 +42,4 @@ vim.wo.signcolumn = "yes" -- Left space doesnt move with the icons
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
+
