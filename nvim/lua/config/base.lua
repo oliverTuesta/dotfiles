@@ -43,3 +43,5 @@ vim.wo.signcolumn = "yes" -- Left space doesnt move with the icons
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
 
+-- WSL2 fix for markdown-preview.nvim
+vim.g.mkdp_open_to_the_world = 1

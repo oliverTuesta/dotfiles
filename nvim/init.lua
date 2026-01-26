@@ -3,5 +3,5 @@ require("config.maps")
 require("config.lazy")
 
 require("config.treesitter")
-require("config.catppuccin")
+require("config.theme")
 
