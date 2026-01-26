@@ -26,6 +26,7 @@ return {
       "jsonls",
       "yamlls",
       "clangd",
+      "tailwindcss",
     }
 
     for _, server in ipairs(servers) do
