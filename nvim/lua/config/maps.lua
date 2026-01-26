@@ -58,6 +58,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "<leader>e", function()
       vim.diagnostic.open_float(nil, { focus = false })
     end, opts)
+
+    vim.keymap.set("n", "<leader>f", function()
+      vim.lsp.buf.format({ async = true })
+    end, opts)
   end,
 })
 

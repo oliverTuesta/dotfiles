@@ -2,10 +2,12 @@ return {
   "neovim/nvim-lspconfig",
   lazy = false,
   config = function()
-    -- Capabilities (optional but still valid)
+    -- Load lspconfig to register default server configs
+    require("lspconfig")
+
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-    -- Lua
+    -- Lua (with custom settings)
     vim.lsp.config("lua_ls", {
       capabilities = capabilities,
       settings = {
@@ -34,6 +36,7 @@ return {
         capabilities = capabilities,
       })
     end
+
+    vim.lsp.enable(servers)
   end,
 }
-
