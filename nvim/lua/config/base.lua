@@ -6,16 +6,12 @@ vim.opt.fileencoding = 'utf-8'
 
 vim.wo.number = true
 
-vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.hlsearch = true
 vim.opt.backup = false
 vim.opt.showcmd = true
-vim.opt.cmdheight = 1
-vim.opt.laststatus = 2
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
-vim.opt.shell = 'fish'
 vim.opt.backupskip = '/tmp/*,/private/tmp/*'
 vim.opt.inccommand = 'split'
 vim.opt.ignorecase = true
@@ -43,5 +39,10 @@ vim.wo.signcolumn = "yes" -- Left space doesnt move with the icons
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
 
--- WSL2 fix for markdown-preview.nvim
-vim.g.mkdp_open_to_the_world = 1
+if not vim.g.vscode then
+  vim.opt.shell = 'fish'           -- VSCode handles terminal
+  vim.opt.laststatus = 2           -- VSCode has its own statusbar
+  vim.opt.cmdheight = 1            -- VSCode handles command area
+  vim.opt.title = true             -- VSCode handles window title
+  vim.g.mkdp_open_to_the_world = 1 -- markdown-preview.nvim won't work
+end
