@@ -29,6 +29,8 @@ return {
       "yamlls",
       "clangd",
       "tailwindcss",
+      "vue_ls",
+      "astro",
     }
 
     for _, server in ipairs(servers) do

@@ -22,6 +22,8 @@ return {
         "jsonls",
         "yamlls",
         "clangd",
+        "vue_ls",
+        "astro",
       },
     },
   },

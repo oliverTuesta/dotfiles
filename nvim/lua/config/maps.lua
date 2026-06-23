@@ -60,7 +60,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end, opts)
 
     vim.keymap.set("n", "<leader>f", function()
-      vim.lsp.buf.format({ async = true })
+      require("conform").format({ async = true, lsp_fallback = true })
     end, opts)
   end,
 })
